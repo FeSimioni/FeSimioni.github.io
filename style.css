@@ -9,7 +9,7 @@
 :root {
     --text-color: white;
     --bg-url: url(./bg-mobile.jpg);
-    --bg-url: url(./bg.desktop.jpg);
+    --bg-url: url(./bg-desktop.jpg);
     /*Troquei para versão DESKTOP porque fica mais bonito na minha tela mas o correto é mobile first*/
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 255, 255, 0.5);
@@ -187,6 +187,7 @@ ul li a:hover {
 
 #social-links a:hover {
     background: var(--highlight-color);
+
 }
 
 /* Rodapé da pagina*/
@@ -221,9 +222,9 @@ footer {
     }
 }
 
-@media (min-widht: 700px) {
+@media (min-width: 700px) {
     :root {
-        --bg-url: url(./bg.desktop.jpg);
+        --bg-url: url(./bg-desktop.jpg);
 
     }
 
