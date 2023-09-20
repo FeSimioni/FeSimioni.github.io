@@ -8,7 +8,8 @@
 /*root igual raiz estou pegando tudo e criando variáveis pra versão light*/
 :root {
     --text-color: white;
-    --bg-url: url(./bg-desktop.jpg);
+    --bg-url: url(./bg-mobile.jpg);
+    --bg-url: url(./bg.desktop.jpg);
     /*Troquei para versão DESKTOP porque fica mais bonito na minha tela mas o correto é mobile first*/
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 255, 255, 0.5);
@@ -21,6 +22,7 @@
 
 .light {
     --text-color: black;
+    --bg-url: url(./bg-mobile-light.jpg);
     --bg-url: url(./bg-desktop-light.jpg);
     /*Troquei para versão DESKTOP porque fica mais bonito na minha tela mas o correto é mobile first*/
     --stroke-color: rgba(0, 0, 0, 0.5);
@@ -216,5 +218,16 @@ footer {
 
     to {
         left: 0%;
+    }
+}
+
+@media (min-widht: 700px) {
+    :root {
+        --bg-url: url(./bg.desktop.jpg);
+
+    }
+
+    .light {
+        --bg-url: url(./bg-desktop-light.jpg);
     }
 }
